@@ -45,19 +45,18 @@ body{
    margin: 0px;
 }
 .container{
-   width: 1440px;
-   /* padding: 0px 30px; */
+   width: 1150px;
+   padding: 0px 20px;
    margin: 0px auto;
 }
-
+.header{
+   background-color: #014E56;
+}
 .header__box{
-   padding-right: 165px;
-   padding-left: 165px;
    padding-top: 70px;
    padding-bottom: 130px;
    display: flex;
    align-items: center;
-   background-color: #014E56;
 }
 .header__logo-link{
    margin-right: 80px;
@@ -109,16 +108,16 @@ body{
    transition: 0.2s;
 }
 
-
+.hero{
+   background-color: #014E56;
+}
 .hero__box{
    position: relative;
    display: flex;
    justify-content: space-between;
-   padding: 0px 165px;
    padding-bottom: 250px;
-   background-color: #014E56;
 }
-.hero__box::before{
+.hero::before{
    content: "";
    position: absolute;
    z-index: 2;
@@ -174,12 +173,16 @@ body{
    margin: 0px;
 }
 
+.manage{
+   background-color: #012F34;
+   position: relative;
+   z-index: 1;
+}
 .manage__box{
    position: relative;
-   padding: 140px 165px;
-   background-color: #012F34;
+   padding: 140px 0;
 }
-.manage__box::before{
+.manage::before{
    content: "";
    position: absolute;
    z-index: 2;
@@ -188,8 +191,8 @@ body{
    background-repeat: no-repeat;
    width: 100px;
    height: 244px;
-   top: 445px;
-   left: 1340px;
+  bottom: 0;
+   right: 0px;
 }
 .manage__line{
    display: inline-block;
@@ -257,12 +260,17 @@ body{
    margin: 0px;
 }
 
+
+.stories{
+   background-color: #004047;
+   position: relative;
+   z-index: 1;
+}
 .stories__box{
    position: relative;
-   padding: 140px 165px;
-   background-color: #004047;
+   padding: 140px 0;
 }
-.stories__box::before{
+.stories::before{
    content: "";
    position: absolute;
    z-index: 2;
@@ -274,7 +282,7 @@ body{
    top: 0px;
    left: 0px;
 }
-.stories__box::after{
+.stories::after{
    content: "";
    position: absolute;
    z-index: 2;
@@ -283,8 +291,8 @@ body{
    background-repeat: no-repeat;
    width: 200px;
    height: 100px;
-   top: 638px;
-   left: 1240px;   
+   bottom: 0px;
+   right: 0px;   
 }
 .stories__title-case{
    width: 932px;
@@ -368,14 +376,20 @@ body{
    display: block;
    margin: 0px auto;
 }
-.started__box{
+
+
+.started{
+   padding: 0px 95px;
+   background-color: #F67E7E;
    position: relative;
+   z-index: 1;
+}
+.started__box{
    display: flex;
    align-items: center;
-   padding: 76px 260px;
-   background-color: #F67E7E;
+   padding: 76px 0px;
 }
-.started__box::before{
+.started::before{
    content: "";
    position: absolute;
    z-index: 1;
@@ -416,9 +430,12 @@ body{
    transition: 0.2s;
 }
 
-.footer__box{
+
+.footer{
    background-color: #002529;
-   padding: 48px 165px;
+}
+.footer__box{
+   padding: 48px 0;
    display: flex;
    justify-content: space-between;
 }
